@@ -6,7 +6,7 @@ spacy.load('en_core_web_sm')
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 # Creating ChatBot Instance
-chatbot = ChatBot('<b>CRCE BOT</b>')
+chatbot = ChatBot('<b>LBSE BOT</b>')
 
 # nlp = spacy.load("en_core_web_sm")
 
@@ -16,7 +16,7 @@ chatbot = ChatBot(
     logic_adapters=[
         {
             'import_path': 'chatterbot.logic.BestMatch',
-            'default_response': "Hi there, Welcome to Fr. CRCE! 👋 If you need any assistance, I'm always here.Go ahead and write the number of any query. 😃✨<b><br><br>  Which of the following user groups do you belong to? <br><br>1.&emsp;Student's Section Enquiry.</br>2.&emsp;Faculty Section Enquiry. </br>3.&emsp;Parent's Section Enquiry.</br>4.&emsp;Visitor's Section Enquiry.</br><br>",
+            'default_response': "Hi there, Welcome to LBSE! 👋 If you need any assistance, I'm always here.Go ahead and write the number of any query. 😃✨<b><br><br>  Which of the following user groups do you belong to? <br><br>1.&emsp;Student's Section Enquiry.</br>2.&emsp;Faculty Section Enquiry. </br>3.&emsp;Parent's Section Enquiry.</br>4.&emsp;Visitor's Section Enquiry.</br><br>",
             'maximum_similarity_threshold': 0.90
         }
     ],
@@ -53,10 +53,10 @@ conversation = [
 "Thank You for visiting!..",
 
 "What do you do?",
-"I am made to give Information about Fr. CRCE college.",
+"I am made to give Information about LBSE college.",
 
 "What else can you do?",
-"I can help you know more about Fr. CRCE",
+"I can help you know more about LBSE",
     
     "1",
     "<b>STUDENT <br>The following are frequently searched terms related to student . Please select one from the options below : <br> <br> 1.1 Curriculars <br>1.2  Extra-Curriculars<br>1.3  Administrative<br>1.4 Examination <br>1.5 Placements </b>",
@@ -130,9 +130,9 @@ conversation = [
     "<b> PARENTS <br>The following are frequently searched terms related to Parents. Please select one from the options below : <br> <br> 3.1 About Us <br>3.2 Notices <br>3.3 Fee Payment <br>3.4 Placements </b> " ,
 
     "3.1",
-    "<b > ABOUT US<br>These are the top results:<br> <br> 3.1.1 About CRCE<br> 3.1.2 Director's Address <br> 3.1.3 Principal's Address </b>",
+    "<b > ABOUT US<br>These are the top results:<br> <br> 3.1.1 About LBSE<br> 3.1.2 Director's Address <br> 3.1.3 Principal's Address </b>",
     "3.1.1",
-    "<b > 3.1.1 About CRCE<br>The link to About CRCE👉 <a href=" 'http://www.frcrce.ac.in/index.php/about-us/about-crce' ">Click Here</a> </b>",
+    "<b > 3.1.1 About LBSE<br>The link to About LBSE👉 <a href=" 'http://www.frcrce.ac.in/index.php/about-us/about-crce' ">Click Here</a> </b>",
     "3.1.2",
     "<b > 3.1.2 Director's Address <br>The link to Director's Address👉<a href=" 'http://www.frcrce.ac.in/index.php/about-us/director' ">Click Here</a> </b>",
     "3.1.3",
@@ -163,9 +163,9 @@ conversation = [
     "<b VISITORS <br>The following are frequently searched terms related to visitors. Please select one from the options below : <br> <br> 4.1 About Us<br>4.2 Programs We Offer <br>4.3 Student Bodies <br>4.4 Extra-Curricular </b>",
     
     "4.1",
-    "<b > ABOUT US<br>These are the top results:<br> <br>4.1.1 About CRCE<br> 4.1.2 Director's Address <br> 4.1.3 Principal's Address </b>",
+    "<b > ABOUT US<br>These are the top results:<br> <br>4.1.1 About LBSE<br> 4.1.2 Director's Address <br> 4.1.3 Principal's Address </b>",
     "4.1.1",
-    "<b > 4.1.1 About CRCE<br>The link to About CRCE👉 <a href=" 'http://www.frcrce.ac.in/index.php/about-us/about-crce' ">Click Here</a> </b>",
+    "<b > 4.1.1 About LBSE<br>The link to About LBSE👉 <a href=" 'http://www.frcrce.ac.in/index.php/about-us/about-crce' ">Click Here</a> </b>",
     "4.1.2",
     "<b > 4.1.2 Director's Address <br>The link to Director's Address👉<a href=" 'http://www.frcrce.ac.in/index.php/about-us/director' ">Click Here</a> </b>",
     "4.1.3",
