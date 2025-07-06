@@ -1,111 +1,100 @@
 .login-dark {
   height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://i.postimg.cc/Xqz8ZLbZ/lbs.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.login-dark::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('https://i.postimg.cc/Xqz8ZLbZ/lbs.jpg') center/cover;
-  opacity: 0.3;
-  z-index: 1;
-}
-
 .login-dark form {
-  max-width: 400px;
+  max-width: 30%;
   width: 90%;
-  background: rgba(255, 255, 255, 0.95);
+  background-color: #1e2833;
   padding: 40px;
-  border-radius: 15px;
-  position: relative;
-  z-index: 2;
-  color: #333;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #fff;
+  box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .login-dark .illustration {
   text-align: center;
   padding: 15px 0 20px;
-  font-size: 80px;
-  color: #667eea;
-}
-
-.login-dark h4 {
-  color: #333;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 25px;
+  font-size: 100px;
+  color: #2980ef;
 }
 
 .login-dark form .form-control {
-  background: #fff;
-  border: 2px solid #e1e8ed;
-  border-radius: 8px;
-  padding: 12px 15px;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 15px;
-  transition: all 0.3s ease;
-}
-
-.login-dark form .form-control:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background: none;
+  border: none;
+  border-bottom: 1px solid #434a52;
+  border-radius: 0;
+  box-shadow: none;
   outline: none;
-}
-
-.login-dark form .form-control::placeholder {
-  color: #999;
+  color: inherit;
 }
 
 .login-dark form .btn-primary {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #214a80;
   border: none;
-  border-radius: 8px;
-  padding: 12px;
-  font-weight: 600;
-  font-size: 16px;
-  color: white;
-  width: 100%;
-  margin-top: 15px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none;
 }
 
-.login-dark form .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
-.login-dark form .btn-primary:active {
-  transform: translateY(0);
+.login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+  background: #214a80;
+  outline: none;
 }
 
 .login-dark form .forgot {
   display: block;
   text-align: center;
   font-size: 14px;
-  color: #667eea;
-  text-decoration: none;
-  margin-top: 15px;
-  transition: color 0.3s ease;
-}
-
-.login-dark form .forgot:hover {
-  color: #764ba2;
+  color: white;
+  opacity: 0.9;
   text-decoration: none;
 }
 
+.login-dark form .forgot:hover, .login-dark form .forgot:active {
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+}
+
+.login-dark form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+/* Enhanced styling for better visibility over background */
+.login-dark h4 {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.login-dark form .form-control::placeholder {
+  color: #bbb;
+}
+
+.login-dark form .form-control:focus {
+  border-bottom-color: #2980ef;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Navbar styling to work with background */
 .navbar-custom {
   background: rgba(0, 0, 0, 0.8) !important;
   backdrop-filter: blur(10px);
@@ -113,58 +102,64 @@
 
 .navbar-brand {
   font-weight: 600 !important;
+  color: #fff !important;
 }
 
 .nav-link {
   font-weight: 500;
+  color: #fff !important;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #667eea !important;
+  color: #2980ef !important;
 }
 
+/* Alert styling */
 .alert {
-  border-radius: 8px;
+  border-radius: 4px;
   border: none;
   margin-bottom: 20px;
 }
 
 .alert-danger {
-  background: #e74c3c;
+  background: rgba(231, 76, 60, 0.9);
   color: white;
+  backdrop-filter: blur(5px);
 }
 
 .alert-success {
-  background: #27ae60;
+  background: rgba(39, 174, 96, 0.9);
   color: white;
+  backdrop-filter: blur(5px);
 }
 
+/* reCAPTCHA styling */
 .g-recaptcha {
   margin: 15px 0;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
-/* Responsive */
+/* Responsive design */
 @media (max-width: 768px) {
   .login-dark form {
-    max-width: 350px;
+    max-width: 80%;
     padding: 30px;
   }
   
   .login-dark .illustration {
-    font-size: 60px;
+    font-size: 80px;
   }
 }
 
 @media (max-width: 480px) {
   .login-dark form {
-    max-width: 320px;
+    max-width: 95%;
     padding: 25px;
   }
   
   .login-dark .illustration {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
